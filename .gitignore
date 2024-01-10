@@ -1,0 +1,5 @@
+# .gitignore
+
+# Ignore node_modules folder
+/frontend/node_modules
+/backend/node_modules
