@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 async function handleclick(todo, fetchData) {
     const id = todo._id;
-    const response = await fetch("http://localhost:3000/complete", {
+    const response = await fetch("https://to-do-app-server-kappa.vercel.app/complete", {
         method: "PUT",
         body: JSON.stringify({
             id: id
@@ -19,7 +19,7 @@ async function handleclick(todo, fetchData) {
 }
 
 async function handleDelete(todoId, fetchData) {
-    const response = await fetch(`http://localhost:3000/delete`, {
+    const response = await fetch(`https://to-do-app-server-kappa.vercel.app/delete`, {
         method: "DELETE",
         body: JSON.stringify({
             id: todoId

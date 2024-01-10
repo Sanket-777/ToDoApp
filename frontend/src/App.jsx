@@ -7,7 +7,7 @@ function App() {
   const [todos, settodos] = useState([]);
   const fetchData = async () => {
 
-    const response = await fetch("http://localhost:3000/todo")
+    const response = await fetch("https://to-do-app-server-kappa.vercel.app/todo")
     const parse_response = await response.json()
     console.log("By Fetch");
     console.log(parse_response)

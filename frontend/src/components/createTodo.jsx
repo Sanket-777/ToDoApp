@@ -4,7 +4,7 @@
 import { useState } from "react";
 
 async function sendData(title, description, onSuccess) {
-    const response = await fetch("http://localhost:3000/todos", {
+    const response = await fetch("https://to-do-app-server-kappa.vercel.app/todos", {
         method: "POST",
         body: JSON.stringify({
             title: title,
